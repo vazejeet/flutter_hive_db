@@ -43,8 +43,8 @@ class Addtodo extends StatelessWidget {
               Container(
                   height: 45,
                   width: double.infinity,
-                  child: ElevatedButton(
-                      onPressed: () {
+                  child: GestureDetector(
+                      onTap: () {
                         if (titlecontroller.text != '') {
                           Todo newtodo = Todo(
                             title: titlecontroller.text,
