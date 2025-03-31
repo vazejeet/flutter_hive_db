@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hive_db/addtodo.dart';
 import 'package:flutter_hive_db/todo.dart';
-import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 
 class Homescreen extends StatefulWidget {

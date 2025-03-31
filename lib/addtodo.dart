@@ -38,11 +38,15 @@ class Addtodo extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 15,
+                height: 20,
               ),
               Container(
                   height: 45,
                   width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.blue
+                  ),
                   child: GestureDetector(
                       onTap: () {
                         if (titlecontroller.text != '') {
@@ -54,9 +58,11 @@ class Addtodo extends StatelessWidget {
                           Navigator.pop(context);
                         }
                       },
-                      child: Text(
-                        "Addtodo",
-                        style: TextStyle(fontSize: 20),
+                      child: Center(
+                        child: Text(
+                          "Add task",
+                          style: TextStyle(color: Colors.white,fontSize: 20),
+                        ),
                       )))
             ],
           ),
